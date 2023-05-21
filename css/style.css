@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../fonts/ProximaNova-Extrabld.eot");
+    src: local("Proxima Nova Extrabold"), local("ProximaNova-Extrabld"), url("../fonts/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/ProximaNova-Extrabld.woff") format("woff"), url("../fonts/ProximaNova-Extrabld.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../fonts/ProximaNova-Regular.eot");
+    src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../fonts/ProximaNova-Black.eot");
+    src: local("Proxima Nova Black"), local("ProximaNova-Black"), url("../fonts/ProximaNova-Black.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/ProximaNova-Black.woff") format("woff"), url("../fonts/ProximaNova-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../fonts/ProximaNova-Bold.eot");
+    src: local("Proxima Nova Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background: #f7f3fa;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1500px;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    /* min-height: 1000px; */
+}
+
+.container_header {
+    padding: 0 168px;
+}
+
+.image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+nav {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_logo {
+    text-decoration: none;
+    display: flex;
+    gap: 8.35px;
+}
+
+.header_logo p {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    color: #ffffff;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav_list li a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.nav_btns a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 38px;
+}
+
+.nav_btn {
+    background: #ffbc51;
+    border-radius: 96px;
+    border: none;
+    padding: 12px 40px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+
+    cursor: pointer;
+}
+
+.main {
+    max-width: 397px;
+    margin-top: 160px;
+}
+
+.header_title {
+    font-weight: 800;
+    font-size: 54.7642px;
+    line-height: 67px;
+    color: #ffffff;
+    text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header_text {
+    margin-top: 18.25px;
+
+    font-size: 18.2547px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.header_btn {
+    margin-top: 53.02px;
+    background: #798ac9;
+    border: 1px solid rgba(171, 163, 163, 0.2);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: 14px 60px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.header_img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) !important;
+    right: 50px;
+}
+
+
+.logos_header {
+    display: none;
+}
+
+.inmenu {
+    display: none;
+}
