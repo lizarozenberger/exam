@@ -193,3 +193,120 @@ nav {
 .inmenu {
     display: none;
 }
+
+.blocks {
+    min-height: 610px;
+}
+
+.blocks_container {
+    position: relative;
+}
+
+.blocks_main {
+    position: absolute;
+    max-width: 377px;
+    padding: 42px 0 0 46px;
+    top: 0;
+    right: 258px;
+}
+
+.title-text {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 128.6%;
+    letter-spacing: 0.04em;
+    color: #857885;
+}
+
+.title-text span {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 128.6%;
+    letter-spacing: 0.04em;
+    color: #5c0e62;
+}
+
+.descr-text {
+    margin-top: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 128.6%;
+    letter-spacing: 0.04em;
+    color: #857885;
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 16px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: #5c0e62;
+    position: relative;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    width: 17.5px;
+    height: 10px;
+    right: -13px;
+    top: 50%;
+    transform: translateY(-50%) translateX(100%);
+    background: url("../img/arrow.svg") no-repeat center / cover;
+}
+
+.blocks_wrapper {
+    position: absolute;
+    left: 175px;
+    top: 121px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 607px;
+}
+
+.blocks_item {
+    max-width: 280px;
+    max-height: 164px;
+    padding: 30px 30px 30px 49px;
+    background: #ffffff;
+    box-shadow: 7px 10px 50px #e8e2f0;
+    border-radius: 4px;
+    position: relative;
+}
+
+.blocks_item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background: linear-gradient(150.72deg, #00b5d0 3.87%, #5c0e62 110.68%);
+    box-shadow: 7px 10px 50px #e8e2f0;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.blocks_item:nth-child(odd) {
+    margin-top: 60px;
+}
+
+.block_name {
+    margin-top: 2px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 128.6%;
+    letter-spacing: 0.04em;
+    color: #5c5e6e;
+}
+
+.block_descr {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 128.6%;
+    letter-spacing: 0.075em;
+    color: #756f6f;
+    opacity: 0.7;
+}
