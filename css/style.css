@@ -310,3 +310,43 @@ nav {
     color: #756f6f;
     opacity: 0.7;
 }
+
+.logos {
+    margin: 70px 0;
+    min-height: 35px;
+}
+
+.logos_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 139px;
+}
+
+.tablet {
+    min-height: 480px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tablet_block {
+    margin-left: 291px;
+    margin-top: 60px;
+}
+
+.red-text {
+    font-weight: 700;
+    font-size: 12.7849px;
+    line-height: 128.6%;
+    letter-spacing: 0.04em;
+    color: #e23434;
+    margin-bottom: 4px;
+}
+
+.tablet_wrapper img {
+    margin-right: 219px;
+}
