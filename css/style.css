@@ -338,6 +338,12 @@ nav {
     margin-top: 60px;
 }
 
+.white-block {
+    max-width: 345px;
+    padding: 38.35px 0 0 42px;
+    position: relative;
+}
+
 .red-text {
     font-weight: 700;
     font-size: 12.7849px;
@@ -349,4 +355,58 @@ nav {
 
 .tablet_wrapper img {
     margin-right: 219px;
+}
+
+.pink-block::before {
+    content: "";
+    width: 88px;
+    height: 91px;
+    background: url("../img/Subtract.svg") no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.white-block::before {
+    content: "";
+    width: 88px;
+    height: 91px;
+    background: url("../img/Subtract_pink.svg") no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.body_image {
+    top: -250px;
+}
+
+.gallery_wrapper {
+    margin-top: 20px;
+}
+
+.gallery_wrapper img {
+    margin-left: 160px;
+    margin-top: -90px;
+}
+
+.gallery_block {
+    margin-right: 258px;
+}
+
+.photos {
+    margin-top: 170px;
+    position: relative;
+}
+
+.photos_wrapper {
+    margin-left: 291px;
+}
+
+.photos img {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
