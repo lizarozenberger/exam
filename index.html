@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>blinqpay</title>
         <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon" />
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/animate.min.css" />
+        <link rel="stylesheet" href="css/hover.css" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
@@ -24,19 +27,10 @@
                         <li><a href="#">Developers</a></li>
                         <li><a href="#">Company</a></li>
                         <li><a href="#">Pricing</a></li>
-                        <div class="nav_btns inmenu">
-                            <a href="#">Support</a>
-                            <button class="nav_btn">Sign in</button>
-                        </div>
                     </ul>
                     <div class="nav_btns">
                         <a href="#">Support</a>
                         <button class="nav_btn">Sign in</button>
-                    </div>
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
                     </div>
                 </nav>
                 <div class="main">
@@ -47,39 +41,32 @@
                         <img src="img/monitors.png" alt="monitors" />
                     </div>
                 </div>
-                <div class="logos_header">
-                    <div class="logos_img"><img src="img/land-roverin-phone.svg" alt="land" /></div>
-                    <div class="logos_img"><img src="img/avengers-phone.svg" alt="avengers" /></div>
-                    <div class="logos_img"><img src="img/etsy-phone.svg" alt="etsy" /></div>
-                    <div class="logos_img"><img src="img/linkedin-phone.svg" alt="linkedin" /></div>
-                    <div class="logos_img"><img src="img/tiktok-phone.svg" alt="tiktok" /></div>
-                </div>
             </div>
         </header>
         <section class="blocks">
             <div class="container blocks_container">
-                <div class="blocks_main pink-block">
+                <div class="blocks_main pink-block wow fadeInRight" data-wow-delay="0.6s">
                     <h2 class="block_title title-text">Make & Share <span>Payments</span> With Community</h2>
                     <p class="block_text descr-text">Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem adipiscing inw</p>
-                    <a href="#" class="block_link link">Learn more</a>
+                    <a href="#" class="block_link link hvr-skew-forward">Learn more</a>
                 </div>
                 <div class="blocks_wrapper">
-                    <div class="blocks_item">
+                    <div class="blocks_item wow fadeInDown hvr-float">
                         <img src="img/accessibility.svg" alt="accessibility" />
                         <div class="block_name">Easy Access</div>
                         <div class="block_descr">Now track all of your transaction easily.</div>
                     </div>
-                    <div class="blocks_item">
+                    <div class="blocks_item wow fadeInRight hvr-float">
                         <img src="img/cash.svg" alt="cash" />
                         <div class="block_name">Cashflow Visiblity</div>
                         <div class="block_descr">Now track all of your transaction easily.</div>
                     </div>
-                    <div class="blocks_item">
+                    <div class="blocks_item wow fadeInLeft hvr-float">
                         <img src="img/analytics.svg" alt="analytics" />
                         <div class="block_name">Use You Connect</div>
                         <div class="block_descr">Now track all of your transaction easily.</div>
                     </div>
-                    <div class="blocks_item">
+                    <div class="blocks_item wow fadeInUp hvr-float">
                         <img src="img/receipt.svg" alt="receipt" />
                         <div class="block_name">Manage Invoicing</div>
                         <div class="block_descr">Now track all of your transaction easily.</div>
@@ -87,55 +74,153 @@
                 </div>
             </div>
         </section>
-        <section class="logos">
-            <div class="container">
-                <div class="logos_wrapper">
-                    <div class="logos_img"><img src="img/land-roverin-logo.svg" alt="land" /></div>
-                    <div class="logos_img"><img src="img/avengers.svg" alt="avengers" /></div>
-                    <div class="logos_img"><img src="img/etsy.svg" alt="etsy" /></div>
-                    <div class="logos_img"><img src="img/linkedin.svg" alt="linkedin" /></div>
-                    <div class="logos_img"><img src="img/tiktok.svg" alt="tiktok" /></div>
-                </div>
+        <div class="body_wrapper">
+            <div class="image-wrapper body_image">
+                <img src="img/body_bg.svg" alt="background" />
             </div>
-        </section>
-        <section class="tablet">
-            <div class="container">
-                <div class="tablet_wrapper wrap">
-                    <div class="tablet_block white-block" >
-                        <p class="tablet_red red-text">CREDIT CARD</p>
-                        <h2 class="tablet_title title-text">Payment <span>Gets Easier</span></h2>
-                        <p class="tablet_text descr-text">Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem adipiscing inw</p>
-                        <a href="#" class="tablet_link link">Learn more</a>
-                    </div>
-                    <img src="img/tablet.png" alt="tablet"/>
-                </div>
-            </div>
-        </section>
-        <section class="gallery">
-            <div class="container">
-                <div class="gallery_wrapper wrap">
-                    <img src="img/gallery.png" alt="gallery"/>
-                    <div class="gallery_block white-block">
-                        <p class="gallery_red red-text">MOBILE TRANSACTION</p>
-                        <h2 class="gallery_title title-text">Smart Mobile <span>Banking</span></h2>
-                        <p class="gallery_text descr-text">Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem adipiscing inw</p>
-                        <a href="#" class="gallery_link link">Learn more</a>
+            <section class="logos">
+                <div class="container">
+                    <div class="logos_wrapper">
+                        <div class="logos_img"><img src="img/land-roverin-logo.svg" alt="land" /></div>
+                        <div class="logos_img wow fadeIn hvr-grow" data-wow-delay="0.3s"><img src="img/avengers.svg" alt="avengers" /></div>
+                        <div class="logos_img wow fadeIn hvr-grow" data-wow-delay="0.6s"><img src="img/etsy.svg" alt="etsy" /></div>
+                        <div class="logos_img wow fadeIn hvr-grow" data-wow-delay="0.3s"><img src="img/linkedin.svg" alt="linkedin" /></div>
+                        <div class="logos_img wow fadeIn hvr-grow"><img src="img/tiktok.svg" alt="tiktok" /></div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="photos">
-            <div class="container">
-                <div class="photos_wrapper wrap">
-                    <div class="photos_block white-block">
-                        <p class="photos_red red-text">SECURE TRANSACTION</p>
-                        <h2 class="photos_title title-text">Safe Yours <span>Savings</span></h2>
-                        <p class="photos_text descr-text">Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem adipiscing inw</p>
-                        <a href="#" class="photos_link link">Learn more</a>
+            </section>
+            <section class="tablet">
+                <div class="container">
+                    <div class="tablet_wrapper wrap">
+                        <div class="tablet_block white-block wow fadeInLeft" >
+                            <p class="tablet_red red-text">CREDIT CARD</p>
+                            <h2 class="tablet_title title-text">Payment <span>Gets Easier</span></h2>
+                            <p class="tablet_text descr-text">Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem adipiscing inw</p>
+                            <a href="#" class="tablet_link link hvr-skew-forward">Learn more</a>
+                        </div>
+                        <img src="img/tablet.png" alt="tablet" class="wow fadeInRight hvr-grow"/>
                     </div>
                 </div>
+            </section>
+            <section class="gallery">
+                <div class="container">
+                    <div class="gallery_wrapper wrap">
+                        <img src="img/gallery.png" alt="gallery" class="wow fadeInLeft hvr-grow"/>
+                        <div class="gallery_block white-block wow fadeInRight">
+                            <p class="gallery_red red-text">MOBILE TRANSACTION</p>
+                            <h2 class="gallery_title title-text">Smart Mobile <span>Banking</span></h2>
+                            <p class="gallery_text descr-text">Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem adipiscing inw</p>
+                            <a href="#" class="gallery_link link hvr-skew-forward">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="photos">
+                <div class="container">
+                    <div class="photos_wrapper wrap">
+                        <div class="photos_block white-block wow fadeInLeft">
+                            <p class="photos_red red-text">SECURE TRANSACTION</p>
+                            <h2 class="photos_title title-text">Safe Yours <span>Savings</span></h2>
+                            <p class="photos_text descr-text">Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem adipiscing inw</p>
+                            <a href="#" class="photos_link link hvr-skew-forward">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/photos.png" alt="photos" class="hvr-backward"/>
+            </section>
+        </div>
+        <div class="last_wrapper">
+            <div class="image-wrapper last_image">
+                <img src="img/Rectangle.svg" alt="background" />
             </div>
-            <img src="img/photos.png" alt="photos"/>
-        </section>
+            <section class="customer">
+                <div class="container container_customer">
+                    <div class="customer_block">
+                        <h2 class="customer_title wow fadeInLeft">What Our <span>Customer</span> Are saying</h2>
+                        <p class="customer_text wow fadeInUp">
+                            Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem lacus a, interdum nulla sem adipiscing inw
+                        </p>
+                    </div>
+                    <div class="item item1">
+                        <div class="item_img hvr-grow">
+                            <img src="img/item1.png" alt="item1" />
+                        </div>
+
+                        <div class="item_text">
+                            Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem lacus a, interdum nulla sem adipiscing inw
+                        </div>
+                        <div class="item_name">Leo Maynus</div>
+                        <div class="item_subname">CEO at Softpanda</div>
+                    </div>
+                    <div class="item item2 hvr-grow"><img src="img/item2.png" alt="item2" /></div>
+                    <div class="item item3 hvr-grow"><img src="img/item3.png" alt="item3" /></div>
+                    <div class="item item4 hvr-grow"><img src="img/item4.png" alt="item4" /></div>
+                    <div class="item item5 hvr-grow"><img src="img/item5.png" alt="item5" /></div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item_img">
+                                    <img src="img/item1.png" alt="item1" />
+                                </div>
+
+                                <div class="item_text">
+                                    Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem lacus a, interdum nulla sem adipiscing inw
+                                </div>
+                                <div class="item_name">Leo Maynus</div>
+                                <div class="item_subname">CEO at Softpanda</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_img">
+                                    <img src="img/item2.png" alt="item1" />
+                                </div>
+
+                                <div class="item_text">
+                                    Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem lacus a, interdum nulla sem adipiscing inw
+                                </div>
+                                <div class="item_name">Leo Maynus</div>
+                                <div class="item_subname">CEO at Softpanda</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_img">
+                                    <img src="img/item3.png" alt="item1" />
+                                </div>
+
+                                <div class="item_text">
+                                    Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem lacus a, interdum nulla sem adipiscing inw
+                                </div>
+                                <div class="item_name">Leo Maynus</div>
+                                <div class="item_subname">CEO at Softpanda</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_img">
+                                    <img src="img/item4.png" alt="item1" />
+                                </div>
+
+                                <div class="item_text">
+                                    Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem lacus a, interdum nulla sem adipiscing inw
+                                </div>
+                                <div class="item_name">Leo Maynus</div>
+                                <div class="item_subname">CEO at Softpanda</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_img">
+                                    <img src="img/item5.png" alt="item1" />
+                                </div>
+
+                                <div class="item_text">
+                                    Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem lacus a, interdum nulla sem adipiscing inw
+                                </div>
+                                <div class="item_name">Leo Maynus</div>
+                                <div class="item_subname">CEO at Softpanda</div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="js/wow.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
