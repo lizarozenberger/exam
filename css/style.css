@@ -49,12 +49,6 @@ body {
     font-weight: 400;
 }
 
-/* section {
-    overflow-x: hidden;
-    overflow-y: hidden;
-} */
-
-
 ::-webkit-scrollbar {
     width: 7px;
 }
@@ -347,6 +341,11 @@ nav {
     min-height: 480px;
 }
 
+.tablet_img img {
+    object-fit: cover;
+    width: 100%;
+}
+
 .wrap {
     display: flex;
     justify-content: space-between;
@@ -372,7 +371,7 @@ nav {
     margin-bottom: 4px;
 }
 
-.tablet_wrapper img {
+.tablet_img {
     margin-right: 219px;
 }
 
@@ -412,7 +411,7 @@ nav {
     margin-top: 20px;
 }
 
-.gallery_wrapper img {
+.gallery_img {
     margin-left: 160px;
     margin-top: -90px;
 }
@@ -735,10 +734,10 @@ footer {
     .tablet_block {
         margin-left: 100px;
     }
-    .tablet_wrapper img {
+    .tablet_img {
         margin-right: unset;
     }
-    .gallery_wrapper img {
+    .gallery_img {
         margin-left: unset;
     }
     .gallery_block {
@@ -768,6 +767,7 @@ footer {
     .wrap {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     .photos {
         margin-top: 112px;
@@ -994,13 +994,12 @@ footer {
     .blocks {
         background: #ffffff;
     }
-    .tablet_wrapper img {
-        width: 386px;
+    .tablet_img {
         margin-top: 30px;
     }
-    .gallery_wrapper img {
-        width: 381px;
+    .gallery_img img {
         object-fit: cover;
+        width: 100%;
     }
     .photos {
         margin-top: 81px;
@@ -1069,9 +1068,19 @@ footer {
         min-height: 429px;
         padding: 0;
     }
+    .swiper-pagination-bullet-active {
+        background: #ffffff;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
 }
 
 @media (max-width: 768px) {
+    .tablet_img{
+        margin: 30px auto 0;
+    }
+    .white-block {
+        max-width: unset;
+    }
     .blocks_img {
         margin-top: 50px;
         width: 100%;
@@ -1098,8 +1107,10 @@ footer {
     .tablet_wrapper {
         flex-wrap: wrap;
     }
-    .tablet_wrapper img {
+    .tablet_img {
         order: -1;
+    }
+    .tablet_img img {
         object-fit: cover;
     }
     .tablet_block {
@@ -1109,8 +1120,7 @@ footer {
     .gallery_wrapper {
         flex-wrap: wrap;
     }
-    .gallery_wrapper img {
-        margin-top: 0;
+    .gallery_img {
         margin: 0 auto;
     }
     .gallery_block {
@@ -1141,8 +1151,12 @@ footer {
         flex-wrap: wrap;
     }
     .footer_item:first-child {
-        margin-right: 300px;
+        margin-right: 20px;
         margin-bottom: 38px;
+    }
+    .white-block::before {
+        top: -41px;
+        left: -28px;
     }
 }
 
@@ -1162,7 +1176,7 @@ footer {
     }
     .hamburger_active {
         position: fixed;
-        right: 32px;
+        right: 33px;
     }
     .main {
         margin-top: 57.37px;
@@ -1199,8 +1213,6 @@ footer {
     }
     .blocks_img {
         margin: 50.53px auto 0;
-        width: 315.17px;
-        height: 179.13px;
     }
     .block_title,
     .block_title span {
@@ -1235,11 +1247,9 @@ footer {
     .block_link {
         margin-top: 12px;
     }
-    .tablet_wrapper img {
+    .tablet_img {
         margin: 57px auto 0;
         transform: matrix(-1, 0, 0, 1, 0, 0);
-        width: 260px;
-        height: 238px;
     }
     .tablet_block {
         margin-top: 22.35px;
@@ -1261,11 +1271,9 @@ footer {
     .gallery_wrapper {
         margin-top: 33.21px;
     }
-    .gallery_wrapper img {
+    .gallery_img {
         margin: 0 auto;
         padding: 0;
-        width: 295.39px;
-        height: 213.63px;
     }
     .tablet {
         min-height: unset;
@@ -1301,10 +1309,6 @@ footer {
     }
     .swiper-pagination {
         bottom: 47px !important;
-    }
-    .swiper-pagination-bullet-active {
-        background: #ffffff;
-        transform: matrix(1, 0, 0, -1, 0, 0);
     }
     .footer_wrapper {
         display: flex;
@@ -1382,5 +1386,14 @@ footer {
         height: 51px;
         left: -26px;
         top: -22.25px;
+    }
+    .tablet_img {
+        max-width: 350px;
+    }
+    .blocks_img {
+        max-width: 404px;
+    }
+    .gallery_img {
+        max-width: 380px;
     }
 }
